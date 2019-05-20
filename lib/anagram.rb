@@ -1,3 +1,4 @@
+require 'pry'
 # Your code goes here!
 class Anagram
 
@@ -8,8 +9,9 @@ class Anagram
   end
 
   def match(word_array)
+    binding.pry
     word_array.each do |elem|
-      elem.sort.match(@word)
+      elem.split(%r{\s*}).sort
     end
   end
 end
