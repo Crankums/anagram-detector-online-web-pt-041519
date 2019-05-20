@@ -9,10 +9,10 @@ class Anagram
   end
 
   def match(word_array)
-    binding.pry
+    #binding.pry
     matches = []
     word_array.each do |elem|
-      if elem.split(%r{\s*}).sort == @word.split(r%{\s*}).sort
+      if elem.split(%r{\s*}).sort == @word.split(%r{\s*}).sort
         matches << elem
       end
     end
